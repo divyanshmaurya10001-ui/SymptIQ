@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SymptIQ - Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 500px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c7be5;
+        }
+        .symptoms {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #333;
+        }
+        .result {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #2e7d32;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #2c7be5;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 SymptIQ Results</h1>
+        <div class="symptoms">
+            <strong>Your Symptoms:</strong><br>
+            {{ symptoms }}
+        </div>
+        <div class="result">
+            🔍 Analyzing... ML Model Coming Soon!
+        </div>
+        <a href="/">Check Again</a>
+    </div>
+</body>
+</html>
