@@ -25,21 +25,22 @@
         h1 {
             color: #2c7be5;
         }
-        .symptoms {
-            background: #f0f8ff;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            color: #333;
-        }
-        .result {
+        .disease {
             background: #e8f5e9;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
             color: #2e7d32;
-            font-size: 18px;
+            font-size: 24px;
             font-weight: bold;
+        }
+        .warning {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            color: #e65100;
+            font-size: 14px;
+            margin: 10px 0;
         }
         a {
             display: inline-block;
@@ -55,12 +56,13 @@
 <body>
     <div class="container">
         <h1>🩺 SymptIQ Results</h1>
-        <div class="symptoms">
-            <strong>Your Symptoms:</strong><br>
-            {{ symptoms }}
+        <p>Based on your symptoms, you may have:</p>
+        <div class="disease">
+            🔍 {{ disease }}
         </div>
-        <div class="result">
-            🔍 Analyzing... ML Model Coming Soon!
+        <div class="warning">
+            ⚠️ This is an AI prediction only. 
+            Please consult a real doctor for proper diagnosis.
         </div>
         <a href="/">Check Again</a>
     </div>
